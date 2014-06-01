@@ -1,123 +1,451 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
-  <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          
-          <!-- FAVICON -->
-          <link rel="shortcut icon" href="/assets/favicon.ico">
-          
-          <!-- PAGE TITLE -->
-          <title>Glassball - Coming Soon</title>
-          
-          <!-- GOOGLE FONTS -->
-          <link href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,300,600,700|Montserrat:400,700" rel="stylesheet" type="text/css">
-          
-          <!-- STYLESHEETS -->
-          <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-          <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-          <link href="/assets/css/animate.css" rel="stylesheet" type="text/css" />
-          <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
-              
-  </head>
-  <body>
-  
-      <!-- BACKGROUND -->
-      <div id="bg-pattern"></div>
-      <div id="bg-darker"></div>
-      <!-- /BACKGROUND -->
-      
-      <!-- PRELOADER -->
-      <div id="prelaoder">
-        <div class="spinner"></div>
-      </div>
-      <!-- /PRELOADER -->
-      
-       
-      <!-- HOME -->
-      <section id="home">
-      
-          <div class="content-block">
-            <div class="col-lg-3">
-            
-              <img class="img-responsive" src="/assets/img/logo.png" alt="Glassball Logo">
-              
-              <p>GLASSBALL</p>
-              <hr class="logo">
-              <p> Is Coming in</p>
-              <!-- start countdown timer -->
-				<ul id="countdown">
-					<li>
-						<span class="days">479</span>
-						<h3>Days</h3>
-					</li>
-					<li>
-						<span class="hours">02</span>
-						<h3>hours</h3>
-					</li>
-					<li>
-						<span class="minutes">00</span>
-						<h3>minutes</h3>
-					</li>
-					<li>
-						<span class="seconds">53</span>
-						<h3>seconds</h3>
-					</li>	
-				</ul>
-				<!-- End countdown timer -->
-            </div>   
-            
-            <div class="col-lg-9">
-                <div id="slider">
-                    <div class="slide"> <h1><span>WE TURN YOUR DATA</span></h1> </div>
-               
-                    <div class="slide"> <h1><span>INTO SERIOUS VALUE.</span></h1> </div>
-                <hr class="large">
-                    
-                <h6>Solving today's biggest business problems requires entirely new approaches to leverage big data.</h6>
-              
-                <h5>GLASSBALL automates the end-to-end workflow from discovery of insights to operationalizing real time actions to solve highly complex business problems. In short it ties together modified versions of leading big data and deep learning open source technologies adds a highly scalable serving layer and uses a web interface to drive it all.</h5>
-<p></p>
-<p></p>                     
-                   
-                <h6>GLASSBALL is currently in private beta.</h6>
-              
-                <h5>Right now we are working together with some of the most successful companies in the past decade from the advertising, media & entertainment and aviation sector helping them to turn their data into actions leading to breakthrough outcomes.</h5>
-            
-                <div class="middle">
-                <div class="row">
-                  <ul class="social-icons">
-                    <li><a class="fa fa-facebook" href="#"></a></li>
-                    <li><a class="fa fa-twitter" href="https://twitter.com/Glassball_Inc"></a></li>
-                  </ul>
-                </div>
-                </div>    
-            </div>
-          </div>
-        </div>
-          
-           
-      </section>
-      <!-- HOME -->
-      
-      <!-- FOOTER -->
-      <div id="footer">
-          
-            <p>2014 &copy; GLASSBALL Inc.</p>
-  
-      </div>
-      <!-- /FOOTER -->
-      
-      <!-- JAVASCRIPTS -->
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="/assets/js/jquery.cycle.min.js"></script>
-      <script type="text/javascript" src="/assets/js/jquery.backstretch.min.js"></script>
-    <script type="text/javascript" src="/assets/js/countdown.js"></script>      
-      <script type="text/javascript" src="assets/js/scripts.js"></script>
+<!--
+=======================================================================================
+ Glassball
+=======================================================================================
+-->
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Glassball - Turn Data into Serious Value</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     
-  </body>
+    <!-- Fonts
+  ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,300,600,700|Montserrat:400,700" rel="stylesheet" type="text/css">
 
+	<!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/ut-fontface.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/ut-responsive-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+	<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
+    <!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+	<!-- Load jQuery
+  	================================================== -->
+  	<script src="js/jquery.min.js"></script>
+	<script src="js/modernizr.js"></script>
+    <script src="js/respond.src.js"></script>
+    
+</head>
+<body id="mainsite">
+	
+    
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- header section -->
+	<header id="header-section" class="hide-on-mobile">
+	<div class="grid-container">
+		<div class="grid-parents grid-100 mobile-grid-100 tablet-grid-100">
+			<div class="site-branding grid-30 mobile-grid-100 tablet-grid-100">	
+				<a href="index.html"><h1>Glassball</h1></a>
+                
+            </div>
+		<nav id="ut-navigation" class="grid-70 hide-on-mobile tablet-grid-100">
+			<ul>
+            	<li><a class="selected" href="#mainsite">Home</a></li>
+				<li><a href="#information-section">Product</a></li>
+                <li><a href="#products">Solutions</a></li>
+				<li><a href="#gallery">Clients</a></li>
+				<!--<li><a href="#company-section">Company</a></li>-->
+			    <a href="contact.html" class="product-link">Request Demo<i class="icon-li icon-chevron-sign-right"></i></a>	
+			</ul>
+        </nav>
+        </div>
+	</div><!-- close container -->
+	</header><!-- close header section -->
+
+	<!-- product section -->
+    <section class="product parallax">
+    	<div class="parallax-banner-1 parallax-background hide-on-mobile"></div><!-- parallax bg -->
+    	<div class="grid-container">
+    		<div class="grid-100 mobile-grid-100 tablet-grid-100">
+    		
+            <div class="site-branding hide-on-tablet hide-on-desktop">	
+				<h1><a href="index.htm">Glassball</a></h1>
+            </div>
+            
+            <h1 class="product-title">WE TURN YOUR BIG DATA INTO SERIOUS VALUE</h1>
+            
+            <p class="product-description hide-on-mobile">Solving today's biggest business problems requires entirely new approaches to leverage big data.</br>GLASSBALL's prediction engine automates the end-to-end workflow from discovery of insights </br>to real time actions leading to breakthrough outcomes.</p>
+
+            <a id="learn-more" class="product-link">Learn more<i class="icon-li icon-chevron-sign-right"></i></a>
+        
+            <a class="product-link hide-on-tablet hide-on-desktop">Request Demo<i class="icon-inbox"></i></a>
+         
+            </div>													
+    	</div>
+    </section><!-- close product section -->
+    
+    <div class="clear"></div>
+    
+    <!-- information section -->
+	<section id="information-section" class="information-section">
+		<div class="grid-container">
+        	
+            <!-- entry header -->
+            <header class="entry-header grid-50 prefix-25">
+            <h2 class="entry-title">GLASSBALL empowers users to derive operational value from complex data of any scale. </h2>
+            <p class="entry-slogan">POWERFUL / SCALABLE / AGILE</p>
+            </header><!-- close entry header -->
+            
+            <!-- icon box 1 -->
+			<div class="grid-33 mobile-grid-100 tablet-grid-50 info">
+				<i class="icon-magic icon-4x main-icon"></i> 
+                <h3>Intelligent</h3>
+<p><b>Empower users to derive operational value from complex data.</b> It solves large scale prediction problems without the need to write complex algorithms, queries or models. <p>
+               <!-- <a class="learn-more" href="#"><i class="icon-li icon-chevron-sign-right"></i>Learn more</a> -->
+			</div><!-- close icon box -->
+            
+            <!-- icon box 2 -->
+			<div class="grid-33 mobile-grid-100 tablet-grid-50 info">
+                <i class="icon-money icon-4x main-icon"></i>
+                <h3>Productive</h3>
+<p><b>Build powerful prediction features in minutes, not months.</b> Glassball discovers insights from complex data automatically - answering the questions you didn&apos;t know to ask. <p>
+                <!-- <a class="learn-more" href="#"><i class="icon-li icon-chevron-sign-right"></i>Learn more</a> -->	
+			</div><!-- close icon box -->
+            
+            <!-- icon box 3 -->
+			<div class="grid-33 mobile-grid-100 tablet-grid-50 info">
+				<i class="icon-bar-chart icon-4x main-icon"></i>
+                <h3>Customizable</h3>
+<p>Customize the highly modularized codebase to fulfill any unique prediction requirement - independend of domain, complexity and scale. <p>
+                <!-- <a class="learn-more" href="#"><i class="icon-li icon-chevron-sign-right"></i>Learn more</a> -->
+			</div><!-- close icon box -->
+            
+            <div class="clear hide-on-mobile hide-on-tablet"></div>
+            
+            <!-- icon box 4 -->
+            <div class="grid-33 mobile-grid-100 tablet-grid-50 info">
+                <i class="icon-sitemap icon-4x main-icon"></i>
+                <h3>Highly Scalable</h3>
+<p><b>It streamlines the data engineering process and turns data of any scale into actionable insights allowing you to optimise and grow your systems without breaking the budget.</b> <p>
+                <!-- <a class="learn-more" href="#"><i class="icon-li icon-chevron-sign-right"></i>Learn more</a> -->
+        	</div><!-- close icon box -->
+        
+            <!-- icon box 5 -->
+            <div class="grid-33 mobile-grid-100 tablet-grid-50 info">
+                <i class="icon-code-fork icon-4x main-icon"></i>
+				<h3>Open Source</h3>
+<p>Using Kafka, Titan, Graphlab, Faunus, Hbase, and R as our underlying open-source technologies means we&apos;ve chosen less expensive, and more accessible ways to develop our solutions. <p>
+                <!-- <a class="learn-more" href="#"><i class="icon-li icon-chevron-sign-right"></i>Learn more</a> -->
+        	</div><!-- close icon box -->
+        
+            <!-- icon box 6 -->
+            <div class="grid-33 mobile-grid-100 tablet-grid-50 info">
+                <i class="icon-medkit icon-4x main-icon"></i>
+                <h3>Fast & Friendly Support</h3>
+<p>We understand that not all of our customers are technical minded, that is why our friendly support is a great choice - leaving you to run your business.<p>
+                <!-- <a class="learn-more" href="#"><i class="icon-li icon-chevron-sign-right"></i>Learn more</a> -->
+        	</div><!-- close icon box -->
+			
+		</div><!-- close grid-container -->
+	</section><!-- close information section -->
+    
+    <div class="clear"></div>
+    
+    <!-- section product left -->
+    <section id="products" class="product-left">
+    	<header class="grid-50 prefix-25">
+            <h2 class="solution-title">GLASSBALL is highly successfully used in the following industries. </h2>
+            <p class="solution-slogan">MEDIA & ENTERTAINMENT  /  AVIATION & AIRLINES</p>
+            <p></p>    
+            </header><!-- close entry header -->
+        
+        <div class="grid-container">    
+        	
+            <!-- product image left -->
+    		<div class="product-image grid-50 mobile-grid-100 tablet-grid-50 cbp-so-side-left cbp-so-side">
+        	 	<!-- <img src="images/website.png" alt="product-left"> -->
+                <img src="images/personalization.jpg" alt="product-left">
+        	</div><!-- close product image left -->
+            
+            <div class="grid-45 prefix-5 mobile-grid-100 tablet-grid-50 cbp-so-side-right cbp-so-side">
+  				
+                <!-- entry header -->          
+        		<header class="entry-header">
+                    <h2 class="entry-title">Agile Realtime User Engagement for Media & Entertainment.</h2>
+                    <p class="entry-slogan">Serve the right content to the right person at the right time</p>
+                </header><!-- entry header -->
+                
+                <p>Realtime user engagement or personalization means you are serving the perfect blend of content to keep users engaged and coming back for more. Surprise and delight your visitors by presenting relevant content tailored to their needs based on their context in real-time.
+                </p>
+                <p>GLASSBALL's personalised, adaptive technology strengthens engagement by lifting the content for which a user has the strongest predicted preference. It analyses historic interaction data to predict user journeys in real-time, serving engaging content that is always adapting to a users changing behaviour and context while learning from global trends.</p>
+
+                <p class="entry-slogan">Breakthrough Outcomes.</p>
+                <!-- icons ul -->
+                <ul class="icons-ul">
+                  <li><i class="icon-li icon-chevron-sign-right"></i><strong>7% increase in advertising revenues</strong></li>
+                  <li><i class="icon-li icon-chevron-sign-right"></i><strong>30%-150% increase in CTR</strong></li>
+                  <li><i class="icon-li icon-chevron-sign-right"></i><strong>5%-10% traffic increase</strong></li>
+				</ul><!-- close icons ul -->
+               <!-- <a class="product-link">Request Demo<i class="icon-li icon-chevron-sign-right"></i></a>
+                -->
+        	</div>
+            
+    	</div><!-- close grid container -->
+    </section><!-- close section product left -->
+    
+    <div class="clear"></div>
+    
+    <!-- section product right -->
+    <section class="product-right">
+    	<div class="grid-container">
+        
+    		<div class="grid-45 suffix-5 mobile-grid-100 tablet-grid-50 cbp-so-side-left cbp-so-side">
+            	
+                <!-- entry header -->
+        		<header class="entry-header">
+                    <h2 class="entry-title">Aviation & Airlines.</h2>
+                    <p class="entry-slogan">Predictive Analytics for optimized flight ressource planning</p>
+                </header>
+                
+                <p>Why do some flights arrive early while others touch down hours late? It's a riddle that consumes frequent flyers and airlines alike. It can result in headaches and missed connections, not to mention the millions in losses each year when a plane is not in the right place at the right time. GLASSBALL's predictive flight model helps improve runway and gate arrival time estimates by as much as 40 percent over industry standards.</p>
+                <p>Customers using GLASSBALL have the potential to save travelers more than five minutes at the gate that could translate to significant savings for airlines. A one-minute reduction per departure could save an average-sized airline 1,700 hours per year, the equivalent of reducing crew costs by $1.2 million and fuel costs by $5 million.</p>
+                
+                <p class="entry-slogan">Breakthrough Outcomes.</p>
+                <!-- icons ul -->
+                <ul class="icons-ul">
+                  <li><i class="icon-li icon-chevron-sign-right"></i><strong>Improve runway and gate arrival time prediction by 40%</strong></li>
+                  <li><i class="icon-li icon-chevron-sign-right"></i><strong>Reduce unnecessary crew costs by up to 3%</strong></li>
+                  <li><i class="icon-li icon-chevron-sign-right"></i><strong>Cut fuel costs by up to 2%</strong></li>
+				</ul><!-- close icons ul -->
+                
+               <!-- <a class="product-link">Request Demo<i class="icon-li icon-chevron-sign-right"></i></a>
+                -->
+        	</div>
+            
+            <!-- prodcut image right -->
+            <div class="product-image grid-50 mobile-grid-100 tablet-grid-50 cbp-so-side-right cbp-so-side">
+            	<img src="images/airline-traffic.gif" alt="prdocut-right">
+                <img src="images/network_planning.gif" alt="prdocut-right">
+                
+        	</div><!-- close product image right -->
+            	
+        </div><!-- close grid container -->
+    </section><!-- close section product right -->
+    
+    <div class="clear"></div>
+
+	<!-- Gallery Section -->
+	<section id="gallery" class="gallery-section">
+		<div class="grid-container">
+        
+			<div class="grid-60 suffix-5 grid-parent mobile-grid-100 tablet-grid-100">
+            	<div class="grid-100 mobile-grid-100 tablet-grid-100">
+                 <!-- entry header -->
+            	<header class="entry-header">
+                    <h2 class="entry-title">Client base</h2>
+                    
+                </header><!-- close entry header -->
+                    
+                    <section class="ff-container">
+ 
+                    <input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all" checked="checked" />
+                    <label for="select-type-all" class="ff-label-type-all"></label>
+
+                    <input id="select-type-1" name="radio-set-1" type="radio" class="ff-selector-type-1" />
+                    <label for="select-type-1" class="ff-label-type-1"></label>
+
+                    <input id="select-type-2" name="radio-set-1" type="radio" class="ff-selector-type-2" />
+                    <label for="select-type-2" class="ff-label-type-2"></label>
+
+
+                    <div class="clr"></div>
+
+                    <ul class="ff-items">
+                        <li class="ff-item-type-1">
+                            <a href="#">
+                                <span>Chameleon</span>
+                                <img src="images/lh-logo.jpg" />
+                            </a>
+                        </li>
+                        <li class="ff-item-type-2">
+                            <a href="#">
+                                <span>Chameleon</span>
+                                <img src="images/spot-logo.jpg" />
+                            </a>
+                        </li>
+                        <li class="ff-item-type-3">
+                            <a href="#">
+                                <span>Chameleon</span>
+                                <img src="images/sc-logo.jpg" />
+                            </a>
+                        </li>
+                        <!-- ... -->
+                    </ul>
+
+                </section>
+                    
+                    <!-- section slider 
+					<section class="slider">
+        				<div class="flexslider">
+          				<ul class="slides">
+            				<li data-thumb="images/slide-1.jpg">
+  	    	    				<img src="images/slide-1.jpg" alt="slide-1" />
+  	    					</li>
+  	    					<li data-thumb="images/slide-2.jpg">
+  	    	    				<img src="images/slide-2.jpg" alt="slide-2" />
+  	    					</li>
+  	    					<li data-thumb="images/slide-3.jpg">
+  	    	    				<img src="images/slide-3.jpg" alt="slide-3" />
+  	    					</li>
+  	    					<li data-thumb="images/slide-4.jpg">
+  	    	    				<img src="images/slide-4.jpg" alt="slide-4" />
+  	    					</li>
+          				</ul>
+        				</div>
+      				</section> close section slider -->
+                    
+        		</div>
+            </div>
+					
+			<div class="grid-35 mobile-grid-100 tablet-grid-100">
+            	
+                <!-- entry header -->
+            	<header class="entry-header">
+                    <h2 class="entry-title">What our happy clients say</h2>
+                    <!--<p class="entry-slogan">Over 10.500 extremely satisfied customers!</p>-->
+                </header><!-- close entry header -->
+
+				<blockquote>&quot;Improved accuracy can help us avoid gate congestion, and minimize delays for passengers and crews. It means less wait time and better efficiency for ground crews ... [and] more efficient use of our aircraft, which saves fuel and helps us being more competitive.&quot;<cite> Ralf Barke, vice president for flight operations at Lufthansa</cite></blockquote>
+                
+                
+			</div>
+            
+		</div><!-- close container -->
+	</section><!-- close gallery section -->
+    
+    <div class="clear"></div>
+    
+    <!-- newsletter section -->
+    <section id="newsletter" class="newsletter" >
+		<div class="grid-container">
+        	<div class="grid-100 parallax-content">
+				<h2 class="newsletter-title">Want to see Glassball in action?</h2>
+                <p class="newsletter-slogan">Contact us for a live demo, product details and pricing.</p>
+                
+                <a href="contact.html" class="product-link">Contact Us<i class="icon-inbox"></i></a>
+                
+           
+            </div><!-- close grid-100 -->
+		</div><!-- close grid container -->
+	</section><!-- close parallax banner 1-->
+    
+    <div class="clear"></div>
+
+    <!-- Company Section -->
+    
+
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="grid-container">
+        
+			<div class="grid-50 prefix-25 mobile-grid-100 tablet-grid-100">
+            
+            	<!-- footer site branding -->
+				<div class="site-branding">	
+					<a><h1>Glassball</h1></a>
+                    <p class="entry-slogan">Turn Data into Serious Value</p>
+            	</div><!-- close footer site branding -->
+                
+                <!-- social icons -->
+                <!--
+                <ul class="social-icons clearfix">
+                
+                    <li>
+                    <a href="#">
+                    <span class="icon-stack">
+                        <i class="icon-circle-blank icon-stack-base"></i>
+                        <i class="icon-twitter"></i>
+                    </span>
+                    </a>
+                    </li>
+                    
+                    <li>
+                    <a href="#">
+                    <span class="icon-stack">
+                        <i class="icon-circle-blank icon-stack-base"></i>
+                        <i class="icon-xing"></i>
+                    </span>
+                    </a>
+                    </li>
+                    
+                    <li>
+                    <a href="#">
+                    <span class="icon-stack">
+                        <i class="icon-circle-blank icon-stack-base"></i>
+                        <i class="icon-linkedin"></i>
+                    </span>
+                    </a>
+                    </li>
+                
+                </ul> -->
+                <!-- close social icons -->
+                          
+				<p class="copyright">Copyright &copy; 2014 <a>Glassball Inc</a>. <br>All rights reserved.</p>
+                
+         	</div>
+		</div><!-- close container -->
+	</footer><!-- close footer -->
+
+<!-- Load Javascript
+  	================================================== -->
+    <script src="js/jquery.parallax.min.js"></script>
+    <!-- <script src="js/froogaloop.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script> -->
+    <script src="js/jquery.scrollTo.min.js"></script>	
+	<script src="js/classie.js"></script>
+	<!-- <script src="js/cbpScroller.js"></script> -->
+	<script src="js/jquery.custom.js"></script>
+	
+    <script type="text/javascript">
+    /* <![CDATA[ */
+		
+		(function($){
+	
+		"use strict";
+    		
+			$(document).ready(function(){
+	
+
+			});
+			
+		})(jQuery);
+		
+	 /* ]]> */	
+    </script>
+    
+<!-- End Document
+================================================== -->
+</body>
 </html>
