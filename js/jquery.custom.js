@@ -29,25 +29,6 @@
 			$.scrollTo( $('#information-section') , 650, { easing: 'swing' , offset: -80} );
 			
 		});
+    });    
 		
-		/* Flexslider
-		================================================== */
-		$(window).load(function () {
-			
-			$('.flexslider').flexslider({
-				animation: "slide",
-				controlNav: "thumbnails",
-				start: function (slider) {
-			     $('body').removeClass('loading');
-				}
-		  	});
-			
-		});
-		
-	});
-
 })(jQuery);
-
-new cbpScroller( document.getElementById( 'mainsite' ) );
-
- /* ]]> */	
