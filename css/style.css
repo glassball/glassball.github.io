@@ -378,94 +378,30 @@ img {
 ================================================== */
 
 .ff-container{
-    width: auto;
-    
+    width: auto; 
 }
 
-.ff-container label{
-    font-family: 'Montserrat', sans-serif;
-    width: 28%;
-    cursor: pointer;
-    color: #777;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-    line-height: 33px;
-    font-size: 19px;
-    background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-    float:left;
-    
-}
-
-.ff-container input.ff-selector-type-all:checked ~ label.ff-label-type-all,
-.ff-container input.ff-selector-type-1:checked ~ label.ff-label-type-1,
-.ff-container input.ff-selector-type-2:checked ~ label.ff-label-type-2,
-.ff-container input.ff-selector-type-3:checked ~ label.ff-label-type-3{
-    background: linear-gradient(top, #646d93 0%,#7c87ad 100%);
-    color: #2A83ED;
-    text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
-}
 .ff-container input{
     display: none;
 }
+
 .ff-items{
     position: relative;
     margin: 0px auto;
-    padding-top: 20px;
-}
-.ff-items a{
-    display: block;
-    position: relative;
-    background: #fff;
-    width: 65%;
-    height: auto;
-    padding-bottom: 30px;
-}
-.ff-items a span{
-    display: block;
-    background: rgba(113,123,161, 0.9);
-    font-style: italic;
-    color: #fff;
-    font-weight: bold;
-    padding: 20px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 50%;
-    height: 0px;
-    overflow: hidden;
-    opacity: 0;
-    text-align: center;
-    text-shadow: 1px 1px 1px #303857;
-    transition: all 0.3s ease-in-out;
+    padding-bottom: 40px;
 }
 
 .ff-items li img{
     display: block;
+    margin: 0 auto;
+    margin-bottom: 14px;
 }
-
 
 .ff-items li{
     margin: 0px;
     float: left;
-    opacity: 0;
     width: 33%;
     height: auto;
-    transition: opacity 0.6s ease-in-out;
-}
-.ff-container input.ff-selector-type-all:checked ~ .ff-items li,
-.ff-container input.ff-selector-type-1:checked ~ .ff-items .ff-item-type-1,
-.ff-container input.ff-selector-type-2:checked ~ .ff-items .ff-item-type-2,
-.ff-container input.ff-selector-type-3:checked ~ .ff-items .ff-item-type-3{
-    opacity: 1;
-}
-.ff-container input.ff-selector-type-1:checked ~ .ff-items li:not(.ff-item-type-1),
-.ff-container input.ff-selector-type-2:checked ~ .ff-items li:not(.ff-item-type-2),
-.ff-container input.ff-selector-type-3:checked ~ .ff-items li:not(.ff-item-type-3){
-    opacity: 0.1;
-}
-.ff-container input.ff-selector-type-1:checked ~ .ff-items li:not(.ff-item-type-1) span,
-.ff-container input.ff-selector-type-2:checked ~ .ff-items li:not(.ff-item-type-2) span,
-.ff-container input.ff-selector-type-3:checked ~ .ff-items li:not(.ff-item-type-3) span{
-    display: none;
 }
 
 /* #Information Section
