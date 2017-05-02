@@ -53,6 +53,7 @@
   	<script src="js/jquery.min.js"></script>
 	<script src="js/modernizr.js"></script>
     <script src="js/respond.src.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     
 </head>
 <body id="mainsite">	
@@ -72,12 +73,15 @@
             	<li><a class="selected" href="#mainsite">HOME</a></li>
 				<li><a href="#information-section">PRODUCT</a></li>
                 <li><a href="#products">SOLUTIONS</a></li>
-				<li><a href="#gallery">CLIENTS</a></li>
-				<li><a href="company.html">COMPANY</a></li>
-			    <a href="demo.html" class="product-link">REQUEST DEMO</a>	
+				<li><a href="#gallery">CLIENTS</a></li>					
 			</ul>
         </nav>
         </div>
+        
+        <div id="notification" style="display: none;">
+          <span class="dismiss"><a title="dismiss this notification">X</a></span>
+        </div>
+        
 	</div><!-- close container -->
 	</header><!-- close header section -->
 
@@ -288,16 +292,7 @@
     
     <div class="clear"></div>
     
-    <!-- newsletter section -->
-    <section id="newsletter" class="newsletter" >
-		<div class="grid-container">
-        	<div class="grid-100 parallax-content">
-				<h2 class="newsletter-title">Want to see Glassball in action?</h2>
-                <p class="newsletter-slogan">Contact us for a live demo, product details and pricing.</p>                
-                <a href="contact.html" class="product-link">Contact Us<i class="icon-inbox"></i></a>          
-            </div><!-- close grid-100 -->
-		</div><!-- close grid container -->
-	</section><!-- close parallax banner 1-->
+    
     
     <div class="clear"></div>
 
@@ -332,6 +327,28 @@
 		})(jQuery);
 		
 	 /* ]]> */	
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if (!$.cookie("international")) {
+                $.getJSON("https://freegeoip.net/json/?callback=?", function(data){
+                    if (data.country_name !== "US") {
+                        popUpFunction();
+                        $.cookie("international", "yes", { expires: 365 });
+                    } else {
+                        $.cookie("international", "no", { expires: 365 });
+                    }
+                });
+            } else {
+                if ($.cookie("international") === "yes") {
+                    popUpFunction();
+                }
+            }
+        });
+        $("#notification").fadeIn("slow").append('GLASSBALL Inc. has been acquired by GE Digital. The technology stack will be inlcuded into GE Digitals portfolio and glassball.com will be shut down 01.09.2017');
+        $(".dismiss").click(function(){
+               $("#notification").fadeOut("slow");
+        });
     </script>
 
 <!-- Load Analytics
